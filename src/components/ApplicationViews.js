@@ -3,6 +3,7 @@ import React from "react";
 import Home from "./home/Home";
 import DashboardView from "./dashboard/DashboardView";
 import CalendarDetail from "./calender/CalendarDetail";
+import WeatherDetail from "./weather/WeatherDetail";
 
 const ApplicationViews = () => {
   return (
@@ -23,6 +24,12 @@ const ApplicationViews = () => {
         path="/calendar"
         render={(props) => {
           return <CalendarDetail />;
+        }}
+      />
+      <Route
+        path="/recipe"
+        render={(props) => {
+          return <WeatherDetail />;
         }}
       />
     </>
