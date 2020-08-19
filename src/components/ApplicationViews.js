@@ -3,7 +3,10 @@ import React from "react";
 import Home from "./home/Home";
 import DashboardView from "./dashboard/DashboardView";
 import CalendarDetail from "./calender/CalendarDetail";
-import WeatherDetail from "./weather/WeatherDetail";
+import RecipeDetail from "./recipe/RecipeDetail";
+import ShoppingListDetail from "./shopping/ShoppingListDetail"
+import WeatherDetail from "./weather/WeatherDetail"
+
 
 const ApplicationViews = () => {
   return (
@@ -11,7 +14,7 @@ const ApplicationViews = () => {
       <Route
         path="/"
         render={(props) => {
-          return <Home />;
+          return <Home {...props}/>;
         }}
       />
       <Route
@@ -29,8 +32,20 @@ const ApplicationViews = () => {
       <Route
         path="/recipe"
         render={(props) => {
-          return <WeatherDetail />;
+          return <RecipeDetail />;
         }}
+      />
+      <Route 
+      path="/shopping"
+      render={(props) => {
+        return <ShoppingListDetail />
+      }}
+      />
+      <Route
+      path="/weather"
+      render={(props) => {
+        return <WeatherDetail />
+      }}
       />
     </>
   );
