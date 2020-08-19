@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import ApplicationViews from "./ApplicationViews";
 
 const Main = () => {
+  return (
+    <>
+      <ApplicationViews />
+    </>
+  );
+};
 
-    return (
-        <>
-        <ApplicationViews />
-        </>
-    )
-}
+export default Main;
