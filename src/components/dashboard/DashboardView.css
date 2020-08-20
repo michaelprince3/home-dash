@@ -1,0 +1,28 @@
+.cardContainer {
+    width: 98%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1em;
+}
+
+.weatherCard {
+    display: flex;
+    border: 2px solid black;
+    width: 20%;
+    height: 15em;
+    margin: 1em;
+    background: lightcoral;
+}
+
+.cardContent {
+    flex-direction: column;
+    justify-content: center;
+}
+
+video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+}
